@@ -47,7 +47,7 @@
         <air.maven.version>3.3.9</air.maven.version>
 
         <dep.antlr.version>4.6</dep.antlr.version>
-        <dep.airlift.version>0.157</dep.airlift.version>
+        <dep.airlift.version>0.158</dep.airlift.version>
         <dep.packaging.version>${dep.airlift.version}</dep.packaging.version>
         <dep.slice.version>0.32</dep.slice.version>
         <dep.aws-sdk.version>1.11.165</dep.aws-sdk.version>
@@ -85,6 +85,7 @@
         <module>presto-hive-hadoop2</module>
         <module>presto-teradata-functions</module>
         <module>presto-example-http</module>
+        <module>presto-rtview</module>
         <module>presto-local-file</module>
         <module>presto-tpch</module>
         <module>presto-tpcds</module>
@@ -206,6 +207,13 @@
             <dependency>
                 <groupId>com.facebook.presto</groupId>
                 <artifactId>presto-example-http</artifactId>
+                <version>${project.version}</version>
+                <type>zip</type>
+            </dependency>
+
+            <dependency>
+                <groupId>com.facebook.presto</groupId>
+                <artifactId>presto-rtview</artifactId>
                 <version>${project.version}</version>
                 <type>zip</type>
             </dependency>
